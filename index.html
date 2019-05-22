@@ -57,20 +57,20 @@ function colorClock(){
   if (seconds <= 9) {
     seconds = '0' + seconds;
   }
-	
-	
+
+
   var hexColor = '#' + hours + minutes + seconds;
   var clockFace = hours + ':' + minutes + ':' + seconds;
 
   document.getElementById('clock').innerHTML = clockFace;
 	document.getElementById('clock').style.background = hexColor;
-	
+
 	setTimeout(function() {
   colorClock();
   }, 1000);
-	
 
-	
+
+
 }
 
 colorClock();
